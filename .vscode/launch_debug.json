@@ -1,0 +1,28 @@
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/pt/miniconda3/envs/GFP/lib/python3.9/site-packages/torch/distributed/launch.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--nproc_per_node=1",
+                "--master_port=22022",
+                "gfpgan/train.py",
+                "-opt",
+                "options/train_gfpgan_v1_ccpd.yml",
+                "--launcher",
+                "pytorch",
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            },
+        }
+    ]
+}

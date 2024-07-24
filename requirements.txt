@@ -1,0 +1,20 @@
+# GFPGAN源码所使用的包
+# basicsr>=1.3.4.0
+# facexlib>=0.2.3
+# lmdb
+# numpy<1.21  # numba requires numpy<1.21,>=1.17
+# opencv-python
+# pyyaml
+# scipy
+# tb-nightly
+# torch>=1.7
+# torchvision
+# tqdm
+# yapf
+
+torch == 1.13.0
+numpy
+hyperlpr
+facexlib
+tqdm
+opencv-python
